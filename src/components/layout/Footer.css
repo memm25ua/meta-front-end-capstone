@@ -1,0 +1,55 @@
+.site-footer {
+  padding: 20px 0;
+  background: #495E57; /* You might choose a more subtle color */
+  color: #fff;
+  text-align: center;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-footer-logo {
+  max-width: 150px; /* Adjust size as necessary */
+  margin-bottom: 20px; /* Space between logo and navigation links */
+}
+
+.site-footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer-nav ul li {
+  margin: 5px 0; /* Spacing between nav items */
+}
+
+.site-footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer-nav ul li a:hover {
+  color: #a5d6a7; /* Adjust hover color as desired */
+}
+
+.site-footer-contact {
+  font-size: 0.875rem; /* Smaller font size for contact details */
+  line-height: 1.5;
+  margin: 15px 0; /* Spacing above and below the contact details */
+}
+
+@media (min-width: 768px) {
+  .site-footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .site-footer-nav,
+  .site-footer-contact {
+    text-align: left;
+  }
+}

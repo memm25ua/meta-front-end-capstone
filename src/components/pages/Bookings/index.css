@@ -1,0 +1,51 @@
+.bookings h2 {
+  padding: 1.875rem 0 1.875rem 0;
+  background-color: #495e57;
+  color: #ffffff;
+  text-align: center;
+}
+
+.bookings form {
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #edefee;
+  height: 40.25rem;
+}
+
+.bookings {
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+}
+
+.bookings::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://images.pexels.com/photos/1484516/pexels-photo-1484516.jpeg");
+  background-size: cover;
+  opacity: 0.5; /* Adjust this value to change the opacity */
+  background-color: #495e57;
+}
+
+.bookings button:disabled,
+.bookings button[disabled] {
+  background-color: #edefee;
+  border-color: #edefee;
+  color: #adafae;
+  cursor: not-allowed;
+}
+
+.confirmed-booking {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 31.25rem;
+  padding: 1.875rem 0 1.875rem 0;
+  text-align: center;
+}
